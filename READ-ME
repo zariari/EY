@@ -1,0 +1,69 @@
+Asistente IA en Consola
+Este proyecto es una aplicación de línea de comandos desarrollada en Python que integra funciones básicas de cálculo, manipulación de texto y consultas a un modelo de lenguaje de OpenAI (ChatGPT). Está diseñado como una herramienta interactiva sencilla que demuestra habilidades en automatización de tareas y consumo de APIs de inteligencia artificial.
+
+Descripción del Proyecto
+El programa ofrece un menú principal desde el cual el usuario puede elegir entre tres funcionalidades principales:
+
+Cálculos matemáticos
+Permite realizar operaciones aritméticas básicas (suma, resta, multiplicación, división).
+
+Manipulación de texto
+Ofrece herramientas para contar palabras, convertir texto a mayúsculas o minúsculas.
+
+Consultas con IA
+Permite enviar preguntas a la API de OpenAI y recibir respuestas generadas por el modelo gpt-3.5-turbo.
+
+Requisitos
+Python 3.8 o superior
+
+Clave de API válida de OpenAI
+
+Biblioteca openai instalada
+
+Instalación de dependencias
+bash
+Copy
+Edit
+pip install openai
+Configuración
+Antes de ejecutar el programa, debe definir su clave de API de OpenAI como una variable de entorno:
+
+Linux/macOS:
+
+bash
+Copy
+Edit
+export OPENAI_API_KEY='tu_clave_api'
+Windows (CMD):
+
+cmd
+Copy
+Edit
+set OPENAI_API_KEY=tu_clave_api
+Ejecución
+Para ejecutar el asistente, use el siguiente comando:
+
+bash
+Copy
+Edit
+python asistente.py
+El programa mostrará un menú interactivo donde podrá seleccionar la funcionalidad deseada.
+
+Estructura del Proyecto
+asistente.py: Archivo principal que contiene la lógica del programa.
+
+Uso de expresiones regulares para validar la entrada matemática.
+
+Uso de eval() restringido a expresiones numéricas controladas para evitar vulnerabilidades.
+
+Uso de la API de OpenAI para la generación de respuestas automáticas.
+
+Observaciones
+Este proyecto es ideal para propósitos educativos y como ejemplo de integración de modelos de lenguaje en aplicaciones básicas.
+
+No se recomienda el uso de eval() en entornos de producción sin un sistema de validación estricto.
+
+Asegúrese de no subir archivos con claves privadas o configuraciones sensibles al repositorio público.
+
+Licencia
+Este proyecto está licenciado bajo los términos de la Licencia MIT.
